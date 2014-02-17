@@ -7,23 +7,8 @@ A proxy object that is easily silenced in production environments.
 ### AMD/RequireJS
 
 ```javascript
-    require(["consola"], function (Consola) {
+require(["consola"], function (Consola) {
 
-        // Consola will output things
-        var dbg = new Consola( true );
-        
-        // Consola will NOT output things
-        var dbg = new Consola( false );
-
-        // Consola will output things if domain is "staging"
-        var dbg = new Consola( location.host == 'staging' );
-
-    });
-```
-
-### Other contexts (non-AMD)
-
-```javascript
     // Consola will output things
     var dbg = new Consola( true );
     
@@ -32,6 +17,21 @@ A proxy object that is easily silenced in production environments.
 
     // Consola will output things if domain is "staging"
     var dbg = new Consola( location.host == 'staging' );
+
+});
+```
+
+### Other contexts (non-AMD)
+
+```javascript
+// Consola will output things
+var dbg = new Consola( true );
+
+// Consola will NOT output things
+var dbg = new Consola( false );
+
+// Consola will output things if domain is "staging"
+var dbg = new Consola( location.host == 'staging' );
 ```
 
 ## How to Use: available methods
