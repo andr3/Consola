@@ -27,6 +27,7 @@
                 log: console.log,
                 info: console.info,
                 error: console.error,
+                warn: console.warn,
                 trace: console.trace,
                 time: console.time,
                 timeEnd: console.timeEnd
