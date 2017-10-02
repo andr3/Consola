@@ -1,0 +1,22 @@
+{
+  "name": "consola",
+  "version": "1.0.0",
+  "description": "Consola utility to allow console output to be easily toggled on and off depending on env/choice.",
+  "main": "consola.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andr3pt/Consola.git"
+  },
+  "keywords": [
+    "console"
+  ],
+  "author": "Andre Luis <me@andr3.net>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andr3pt/Consola/issues"
+  },
+  "homepage": "https://github.com/andr3pt/Consola#readme"
+}
