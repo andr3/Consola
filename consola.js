@@ -34,6 +34,8 @@
         },
 
         init: function () {
+            this.context = this.options.context;
+
             for (var method in this.options.methods) {
                 this[method] = this.factory(method);
             }   
@@ -43,7 +45,7 @@
         factory: function (method) {
             return function () {
                 var args = [ method ];
-                for (index in arguments) {
+                for (var index in arguments) {
                     args.push(arguments[index]);
                 }
                 this.raw.apply(this, args);
